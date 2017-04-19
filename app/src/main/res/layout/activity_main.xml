@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.temple.lab9.MainActivity">
+
+    <EditText
+        android:id="@+id/urlEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Type URL"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonPrevious"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/urlEditText"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="24dp"
+        android:text="Prev" />
+
+    <Button
+        android:id="@+id/buttonNew"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonPrevious"
+        android:layout_centerHorizontal="true"
+        android:text="New" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/webViewFrag"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="45dp"
+        android:text="Next" />
+
+    <FrameLayout
+        android:id="@+id/webViewFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonPrevious">
+    </FrameLayout>
+
+</RelativeLayout>
